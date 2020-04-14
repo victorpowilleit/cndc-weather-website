@@ -69,6 +69,10 @@ button {
     flex-grow: 1;
 }
 .weatherImg{
-    filter: brightness(2);
-    margin-top: 5px;
+    border-radius: 100%;
+}
+.forecastImgContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
 }
