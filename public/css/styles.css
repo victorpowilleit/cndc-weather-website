@@ -62,3 +62,13 @@ button {
     text-align: justify;
     margin-top: 0px !important;
 }
+.forecast-container {
+    display: flex;
+}
+.forecastText {
+    flex-grow: 1;
+}
+.weatherImg{
+    filter: brightness(2);
+    margin-top: 5px;
+}

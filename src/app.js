@@ -61,7 +61,8 @@ app.get("/weather", (req, res) => {
         } else {
           return res.send({
             LocationData: data.location,
-            WeatherData: forecastData,
+            WeatherData: forecastData[0],
+            WeatherImg: forecastData[1]
           });
         }
       });
