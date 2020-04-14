@@ -18,7 +18,7 @@ const geocode = (address, callback) =>{
       const {place_name:place, center:coord} = body.features[0]
       callback(undefined, {
         location: place,
-        coordinates: coord[0]+','+coord[1]
+        coordinates: coord[1]+','+coord[0]
       })
     }
   })

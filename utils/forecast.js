@@ -4,6 +4,7 @@ const weather_url = "http://api.weatherstack.com/current"
 const weather_key = "7ba24090a2417bc3909fd906ff27fc3c"
 
 const forecast = ({coordinates}, callback) => {
+  console.log(coordinates)
   const units = '&units=m'
   const url = weather_url + '?access_key=' + weather_key + '&query=' + coordinates + units
   request({ url, json: true }, ( error, {body} ) => {
