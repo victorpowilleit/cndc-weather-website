@@ -11,7 +11,31 @@
 <body>
     <div class="main-content">
         {{>header}}
-        <img class="portrait" src="/img/me.png">
+        <div class="about-container">
+            <img class="portrait" src="/img/me.png">
+            <p>
+                <strong>
+                HELLO THERE!
+                </strong>
+                <br>
+                <br>
+                This webpage was created by Victor Powilleit as part
+                of a Node.js study.<br>
+                It uses data from mapbox.com and weatherstack.com to,
+                respectively, convert a given location into coordinates
+                with mapbox api, retrieve that info and then get provide
+                it for weatherstack, where the app again retrieves data,
+                this time from the return of the request made for
+                weatherstack, wich is parsed and formated into a string
+                to show the main forecast description for the area and
+                average temperature in celsius.
+                Finally, in this very simple project, that can be seen at 
+                https://github.com/victorpowilleit/cndc-weather-website,
+                was taken advantage of three node modules, wich are EXPRESS,
+                HBS and REQUEST. <br> <br>
+                Thank you for testing it.
+            </p>
+        </div>
     </div>
     
     {{>footer}}

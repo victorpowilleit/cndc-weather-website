@@ -39,6 +39,7 @@ header a {
 
 .portrait {
     width: 250px;
+    margin-bottom: auto;
 }
 input {
     border: 1px solid #cccccc;
@@ -50,4 +51,14 @@ button {
     background: #888888;
     color: white;
     padding: 8px;
+}
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about-container p {
+    padding-left: 10px;
+    text-align: justify;
+    margin-top: 0px !important;
 }
